@@ -1,0 +1,1 @@
+import{restaurantRating}from"../../data/fecth-api";const homepage={render:async()=>'\n        <div class="homepage">\n        </div>\n        ',async afterRender(){const a=await restaurantRating();console.log(a)}};export default homepage;
