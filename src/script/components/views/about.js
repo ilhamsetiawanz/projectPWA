@@ -17,11 +17,11 @@ const aboutUs = {
                 <p class="about-desc">Website restoran kami berpartner dengan mitra terbaik untuk pengalaman terbaik.</p>
             </section>
             <section class="img-partner">
-                <img src="/src/public/asset/img/card/card  1.jpeg" alt="patnership">
-                <img src="/src/public/asset/img/card/card  2.jpeg" alt="patnership">
-                <img src="/src/public/asset/img/card/card 3.jpeg" alt="patnership">
-                <img src="/src/public/asset/img/card/card 4.jpeg" alt="patnership">
-                <img src="/src/public/asset/img/card/card 5.jpeg" alt="patnership">
+                <img src="/asset/img/card/card  1.jpeg" alt="patnership">
+                <img src="/asset/img/card/card  2.jpeg" alt="patnership">
+                <img src="/asset/img/card/card 3.jpeg" alt="patnership">
+                <img src="/asset/img/card/card 4.jpeg" alt="patnership">
+                <img src="/asset/img/card/card 5.jpeg" alt="patnership">
             </section
         </section>
         `;
