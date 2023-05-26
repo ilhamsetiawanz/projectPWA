@@ -1,1 +1,0 @@
-import{configData}from"./config";export const API_GATE={restaurantList:`${configData.urlAPI}/list`,restaurantDetail:t=>`${configData.urlAPI}/detail/${t}`,restaurantReview:t=>`${configData.urlAPI}/review/${t}`};

@@ -1,1 +1,0 @@
-const navigationBar={init({button:t,navDrawer:e,content:a}){t.addEventListener("click",(t=>{this._toggleRespon(t,e)})),a.addEventListener("click",(t=>{this._closeDrawer(t,e)}))},_toggleRespon(t,e){t.stopPropagation(),e.classList.toggle("active")},_closeDrawer(t,e){t.stopPropagation(),e.classList.remove("active")}};export default navigationBar;

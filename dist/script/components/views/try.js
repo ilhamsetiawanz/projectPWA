@@ -1,1 +1,0 @@
-import RestaurantSource from"../../data/fecth-api";const trypage={render:async()=>'\n      <h2>Restaurant</h2>\n      <section class="restoContent">\n        <div id="resto" class="resto-card">\n          \n        </div>\n      </section>\n    ',async afterRender(){}};export default trypage;

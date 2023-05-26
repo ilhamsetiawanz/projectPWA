@@ -1,1 +1,0 @@
-self.addEventListener("install",(e=>{console.log("Installing Service Worker ...")})),self.addEventListener("activate",(e=>{console.log("Activating Service Worker ...")})),self.addEventListener("fetch",(e=>{console.log(e.request),e.respondWith(fetch(e.request))}));

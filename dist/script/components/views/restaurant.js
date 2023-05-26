@@ -1,1 +1,0 @@
-import{RESTOCATALOG}from"../webpages/restopages";const resto={render:async()=>'\n        <section id="resto" class="restoContent">\n          <h2 class="katalog-header">Our Catalog</h2>\n        </section>\n      ',async afterRender(){const e=document.getElementById("resto"),t=new RESTOCATALOG;e.appendChild(t)}};export default resto;

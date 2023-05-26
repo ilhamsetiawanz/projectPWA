@@ -1,1 +1,0 @@
-import{RestoDetail}from"../webpages/detail-pages";const detail={render:async()=>'\n    <div class="detailContainer">\n    \n    </div>    \n    ',async afterRender(){const e=document.querySelector(".detailContainer"),t=new RestoDetail;e.appendChild(t)}};export default detail;
