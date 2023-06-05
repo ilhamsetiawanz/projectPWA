@@ -17,11 +17,26 @@ const aboutUs = {
                 <p class="about-desc">Website restoran kami berpartner dengan mitra terbaik untuk pengalaman terbaik.</p>
             </section>
             <section class="img-partner">
-                <img src="/asset/img/card/card  1.jpeg" alt="patnership">
-                <img src="/asset/img/card/card  2.jpeg" alt="patnership">
-                <img src="/asset/img/card/card 3.jpeg" alt="patnership">
-                <img src="/asset/img/card/card 4.jpeg" alt="patnership">
-                <img src="/asset/img/card/card 5.jpeg" alt="patnership">
+                <picture>
+                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card  1-small.jpg">
+                    <img class="img-content" src="asset/card/card  1-large.jpg" alt="patnership">
+                </picture>
+                <picture>
+                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card  2-small.jpg">
+                    <img class="img-content" src="asset/card/card  2-large.jpg" alt="patnership">
+                </picture>
+                <picture>
+                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card 3-small.jpg">
+                    <img class="img-content" src="asset/card/card 3-large.jpg" alt="patnership">
+                </picture>
+                <picture>
+                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card 4-small.jpg">
+                    <img class="img-content" src="asset/card/card 4-large.jpg" alt="patnership">
+                </picture>
+                <picture>
+                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card 5-small.jpg">
+                    <img class="img-content" src="asset/card/card 5-large.jpg" alt="patnership">
+                </picture>
             </section
         </section>
         `;

@@ -35,13 +35,3 @@ export const getRestaurantDetail = async (id) => {
   const data = await response.json();
   return data.restaurant;
 };
-
-// Mengambil Menambahkan Review restaurant dari API
-export const addReview = async () => {
-  const url = `${API_GATE.restaurantReview}`;
-  const response = await fetch(url, {
-    method: 'POST',
-  });
-  const data = await response.json();
-  return data.customerReviews;
-};

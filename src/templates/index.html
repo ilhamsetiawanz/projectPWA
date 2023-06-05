@@ -5,39 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ff6900"/>
-    <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="manifest" href="./app.webmanifest">
-    <link rel="shortcut icon" href="/dist/asset/img/logo/favion.png" type="image/x-icon">
-    <title>Restaurant Catalog</title>
+    <link rel="shortcut icon" href="asset/logo/favion.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="description" content="Temukan pengalaman kuliner terbaik di restoran kami! Nikmati menu istimewa kami yang disiapkan dengan bahan-bahan segar dan berkualitas tinggi. Dapatkan juga informasi lengkap mengenai lokasi, jam operasional, serta ulasan dari pelanggan kami. Kunjungi situs kami sekarang untuk mengetahui lebih lanjut tentang restoran milik kami."> 
+    <title>Restaurant catalogue</title>
 </head>
 <body>
+  <a href="#mainContent" class="skip-link">Lanjutkan Membaca</a>
     <header>
         <nav>
             <div id="navbar" class="nav-proper">
-                <img src="/dist/asset/img/logo/logo.png" alt="Web Logo">
+                <a class="logo" href="#/">Restaurant Catalogue</a>
                 <button id="nav-button" class="burger">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
                 </button>
             </div>
             <div class="nav-items">
                 <a class="nav-item" href="#/">Home</a>
-                <a class="nav-item" href="#/restaurant">catalogue</a>
-                <a class="nav-item" href="#/try">Favorite</a>
+                <a class="nav-item" href="#/restaurant">Catalogue</a>
+                <a class="nav-item" href="#/favorite">Favorite</a>
                 <a class="nav-item" href="#/about">About Us</a>
             </div>
         </nav>
         <div class="banner">
-            <img src="/dist/asset/img/hero/hero-image_2.jpg" alt="Banner">
+            <picture>
+                <source class="bannerImg" media="(max-width: 600px)" srcset="asset/hero/hero-image_2-small.jpg">
+                <img class="bannerImg" src="asset/hero/hero-image_2-large.jpg" alt="banner">
+            </picture>
         </div>
     </header>
     <main class="main-continer" id="mainContent">
 
     </main>
-    <footer>
-
+    <footer id="footers">
+        <p>Made With ❤️ From Ilham Setiawan</p>
     </footer>
-    <script src="/dist/app.bundle.js"></script>
+    <script src="app.bundle,js"></script>
 </body>
 </html>

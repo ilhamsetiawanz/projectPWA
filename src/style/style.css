@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,7 +16,7 @@ body{
 /* navbar & header item */
 nav {
     padding: 0.8rem 3rem;
-    background-color: #03001C;
+    background-color: #fff;
 
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@ nav {
 }
 
 .nav-item{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1em;
     font-weight: 500;
@@ -40,14 +41,20 @@ nav {
     min-width: 44px;
     min-height: 44px;
 }
-
+.logo {
+    padding: 1rem;
+}
 .nav-proper > button{
     display: none;
 }
-.nav-proper >  img{
-    width: 12%;
+.nav-proper >  .logo{
+    color: #ff6900;
+    font-size: 3vh;
+    text-decoration: none;
+    font-family: 'Marck Script', cursive;
+    font-weight: 600;
 }
-.banner > img {
+.bannerImg {
     width: 100%;
 }
 
@@ -55,7 +62,7 @@ nav {
 .katalog-header{
     text-align: center;
 }
-#resto, .about-section, #about-more{
+#resto, .about-section, #about-more, .detailContainer{
     padding: 5%;
 }
 
@@ -104,6 +111,9 @@ nav {
 }
 
 .detail-btn{
+    display: inline-block;
+    min-height: 44px;
+    min-width: 44px;
     width: 100%;
     font-size: 0.8rem;
     padding: 0.5em 2em;
@@ -117,6 +127,71 @@ nav {
     color: #fff;
     text-decoration: none;
 }
+
+/* Detail Content */
+.detail-top{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 4%;
+}
+
+.detail-top >img{
+    width: 90vh;
+}
+.resto-detail >h2{
+    margin-bottom: 3%;
+}
+
+.detail-dsc{
+    margin-bottom: 4%;
+    text-align: justify;
+}
+
+.menus-resto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.reviews>h3{
+    margin-bottom: 1rem;
+}
+.review-item{
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 2px 4px rgba(25, 24, 24, 0.233);
+}
+.profile-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.review-txt, .review-date{
+    font-size: 12px;
+}
+
+
+.like{
+    padding: 1.5vh;
+    border-radius: 5px;
+    background-color: #ff6900;
+    border: 0;
+    cursor: pointer;
+    color:#F0F0F0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.like > span{
+    color: #F0F0F0;
+    text-align: center;
+}
+
 
 /* about Item */
 
@@ -189,10 +264,20 @@ p.about-item{
     gap: 5vh;
 }
 
-.img-partner > img{
+.img-content{
     width: 20vh;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#footers{
+    background-color: #171717;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
 }
 /* Footer */
 @media screen and (min-width: 320px) and (max-width: 480px){
@@ -201,25 +286,31 @@ p.about-item{
         flex-direction: column;
         align-items: center;
         padding: 5%;
-        background-color: #03001C;
+        background-color: #fff;
     }
     
     .nav-proper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        gap: 4vh;
     }
     .nav-proper > button {
         display: inline-block;
         padding: 0.6%;
         background-color: transparent;
-        border: none;
+        border: 2px solid black;
         border-radius: 6px;
         min-width: 44px;
         min-height: 44px;
     }
-    .nav-proper > img {
-        width: 14%;
+    .nav-proper >  .logo{
+        color: #ff6900;
+        font-size: 3vh;
+        text-decoration: none;
+        font-family: 'Marck Script', cursive;
+        font-weight: 600;
     }
 
     .nav-items {
@@ -257,6 +348,41 @@ p.about-item{
         width: 100%;
     }
 
+    /* Detail Item Mobile */
+    .detail-top >img{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .detail-top{
+        flex-direction: column;
+    }
+
+    .detail-dsc>h3{
+        font-size: 16px;
+    }
+
+    .detail-dsc>p{
+        font-size: 12px;
+    }
+
+    .menus-resto{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #foodMenuList>h3, #drinkMenuList>h3{
+        font-size: 16px;
+    }
+
+    #foodMenuList>p, #drinkMenuList>p{
+        font-size: 12px;
+    }
+
+    .like{
+        width: 100%;
+        height: 50px;
+    }
+
     /* about Item Mobile */
     .about-list{
         flex-direction: column;
@@ -271,4 +397,80 @@ p.about-item{
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        background-color: #fff;
+    }
+    
+    .nav-proper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 4vh;
+    }
+    .nav-proper > button {
+        display: inline-block;
+        padding: 0.6%;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 6px;
+        min-width: 44px;
+        min-height: 44px;
+    }
+    .nav-proper >  .logo{
+        color: #ff6900;
+        font-size: 3vh;
+        text-decoration: none;
+        font-family: 'Marck Script', cursive;
+        font-weight: 600;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-items.active {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        animation-name: nav-active;
+        animation-duration: 0.5s;
+    }
+
+    .about-list{
+        align-items: center;
+    }
+
+    .about-container{
+        width: 90%;
+    }
+
+    .img-partner{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #ff6900;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+   
+.skip-link:focus {
+     top: 0;
 }

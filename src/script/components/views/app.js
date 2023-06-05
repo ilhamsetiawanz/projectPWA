@@ -4,12 +4,13 @@ import routes from '../../routers/routes';
 
 class Apps {
   constructor({
-    button, navbar, navDrawer, content,
+    button, navbar, navDrawer, content, footer,
   }) {
     this._button = button;
     this._navbar = navbar;
     this._navDrawer = navDrawer;
     this._content = content;
+    this._footer = footer;
 
     this._appShell();
   }

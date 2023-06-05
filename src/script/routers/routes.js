@@ -1,13 +1,12 @@
 import resto from '../components/views/restaurant';
-import homepage from '../components/views/home';
-import trypage from '../components/views/try';
+import favoriteWebs from '../components/views/favorite';
 import detail from '../components/views/detail';
 import aboutUs from '../components/views/about';
 
 const routes = {
-  '/': homepage,
+  '/': resto,
   '/restaurant': resto,
-  '/try': trypage,
+  '/favorite': favoriteWebs,
   '/detail/:id': detail,
   '/about': aboutUs,
 };
