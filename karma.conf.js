@@ -1,8 +1,8 @@
 // Karma configuration
 // Generated on Fri Jul 03 2020 20:15:52 GMT+0700 (Western Indonesia Time)
-// eslint-disable-next-line func-names
-module.exports = function (config) {
+module.exports = (config) => {
   config.set({
+
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
@@ -11,7 +11,9 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
-    files: ['specs/**/*Spec.js'],
+    files: [
+      'specs/**/*Spec.js',
+    ],
 
     // list of files / patterns to exclude
     exclude: [],

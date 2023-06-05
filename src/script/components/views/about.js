@@ -18,24 +18,24 @@ const aboutUs = {
             </section>
             <section class="img-partner">
                 <picture>
-                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card  1-small.jpg">
-                    <img class="img-content" src="asset/card/card  1-large.jpg" alt="patnership">
+                    <source class="img-content lazyload" media="(max-width: 600px)" srcset="asset/card/card  1-small.jpg">
+                    <img class="img-content lazyload" fata-src="asset/card/card  1-large.jpg" alt="patnership">
                 </picture>
                 <picture>
-                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card  2-small.jpg">
-                    <img class="img-content" src="asset/card/card  2-large.jpg" alt="patnership">
+                    <source class="img-content lazyload" media="(max-width: 600px)" srcset="asset/card/card  2-small.jpg">
+                    <img class="img-content lazyload" data-src="asset/card/card  2-large.jpg" alt="patnership">
                 </picture>
                 <picture>
-                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card 3-small.jpg">
-                    <img class="img-content" src="asset/card/card 3-large.jpg" alt="patnership">
+                    <source class="img-content lazyload" media="(max-width: 600px)" srcset="asset/card/card 3-small.jpg">
+                    <img class="img-content lazyload" data-src="asset/card/card 3-large.jpg" alt="patnership">
                 </picture>
                 <picture>
-                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card 4-small.jpg">
-                    <img class="img-content" src="asset/card/card 4-large.jpg" alt="patnership">
+                    <source class="img-content lazyload" media="(max-width: 600px)" srcset="asset/card/card 4-small.jpg">
+                    <img class="img-content lazyload" data-src="asset/card/card 4-large.jpg" alt="patnership">
                 </picture>
                 <picture>
-                    <source class="img-content" media="(max-width: 600px)" srcset="asset/card/card 5-small.jpg">
-                    <img class="img-content" src="asset/card/card 5-large.jpg" alt="patnership">
+                    <source class="img-content lazyload" media="(max-width: 600px)" srcset="asset/card/card 5-small.jpg">
+                    <img class="img-content lazyload" data-src="asset/card/card 5-large.jpg" alt="patnership">
                 </picture>
             </section
         </section>

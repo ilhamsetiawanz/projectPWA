@@ -18,7 +18,7 @@ export class RecomPage extends HTMLElement {
         const recomContainer = document.createElement('div');
         recomContainer.classList.add('recom-container');
         recomContainer.innerHTML = `
-          <img class="recom-img lazyload" src="${imgPict + restaurant.pictureId}" alt="${restaurant.name}" >
+          <img class="recom-img lazyload" data-src="${imgPict + restaurant.pictureId}" alt="${restaurant.name}" >
           <div class="recom-detail">
             <a href="#/detail/${restaurant.id}">${restaurant.name}</a>
             <p>${restaurant.rating}</p>

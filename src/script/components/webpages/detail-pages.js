@@ -18,9 +18,9 @@ export class RestoDetail extends HTMLElement {
 
       detailItem.innerHTML = `
         <div class="resto-detail">
-          <h2 class="detail-name">${restoDetail.name}</h2>
+          <h2 id="resto-title" class="detail-name">${restoDetail.name}</h2>
           <div class="detail-top">
-            <img class="lazyload" src="${imgBanner + restoDetail.pictureId}" alt="${restoDetail.name}"  crossorigin="anonymous">
+            <img class="lazyload" data-src="${imgBanner + restoDetail.pictureId}" alt="${restoDetail.name}"  crossorigin="anonymous">
             <div class="detail-top-text">
               <p>${restoDetail.city}</p>
               <p>${restoDetail.address}</p>

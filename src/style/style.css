@@ -399,7 +399,7 @@ p.about-item{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 990px){
+@media screen and (min-width: 600px) and (max-width: 990px){
     nav {
         display: flex;
         flex-direction: column;

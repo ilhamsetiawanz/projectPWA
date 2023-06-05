@@ -8,17 +8,29 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './*_test.js',
-  output: './output',
+  tests: 'e2e/**/*.spec.js',
+  output: 'e2e/output',
   helpers: {
     Puppeteer: {
-      url: 'http://localhost',
+      url: 'http://localhost:9000',
       show: true,
-      windowSize: '',
+      windowSize: '1200x900',
     },
   },
   include: {
     I: './steps_file.js',
   },
   name: 'projectPWA',
+  plugins: {
+    pauseOnFail: {},
+    retryFailedStep: {
+      enabled: true,
+    },
+    tryTo: {
+      enabled: true,
+    },
+    screenshotOnFail: {
+      enabled: true,
+    },
+  },
 };

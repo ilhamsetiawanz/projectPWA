@@ -18,7 +18,7 @@ export class AboutPage extends HTMLElement {
         const aboutContainer = document.createElement('div');
         aboutContainer.classList.add('about-container');
         aboutContainer.innerHTML = `
-                <img class="about-img lazyload" src="${imgPict + restaurant.pictureId}" alt="${restaurant.name}  crossorigin="anonymous">
+                <img class="about-img lazyload" data-src="${imgPict + restaurant.pictureId}" alt="${restaurant.name}  crossorigin="anonymous">
                 <div class="about-detail>
                     <h2 class="about-head">${restaurant.name}</div>
                     <p class="about-item">${restaurant.description}

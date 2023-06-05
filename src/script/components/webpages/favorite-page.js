@@ -17,12 +17,12 @@ export class RestoFavorite extends HTMLElement {
         const restoList = document.createElement('div');
         restoList.classList.add('resto');
         restoList.innerHTML = `
-                <img class="img-resto lazyload" src="${imgPict + restaurant.pictureId}" alt="${restaurant.name}"  crossorigin="anonymous">
+                <img class="img-resto lazyload" data-src="${imgPict + restaurant.pictureId}" alt="${restaurant.name}"  crossorigin="anonymous">
                 <div class="resto-container">
-                  <h2>${restaurant.name}</h2>
+                  <h2 id="resto-title">${restaurant.name}</h2>
                   <p class="resto-info">${restaurant.rating}</p>
                 </div>
-                <a href="#/detail/${restaurant.id}"><button class="detail-btn">Selengkapnya</button></a>
+                <a id="resto-btn" href="#/detail/${restaurant.id}"><button class="detail-btn">Selengkapnya</button></a>
               `;
         restoItem.appendChild(restoList);
       });
