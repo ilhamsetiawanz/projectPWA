@@ -13,14 +13,14 @@ describe('Favoriting A Restaurant', () => {
   it('should  show the favorite Button when the  restaurant has not been favorited before', async () => {
     await TestFactories.createFavoriteButtonPresenterWithRestaurant({ id: 1 });
 
-    expect(document.querySelector('[aria-label="favorite this restaurant"]'))
+    expect(document.querySelector('[aria-label="like this Restaurant"]'))
       .toBeTruthy();
   });
 
   it('should not show the unfavorite button when the restaurant has not been favorited before', async () => {
     await TestFactories.createFavoriteButtonPresenterWithRestaurant({ id: 1 });
 
-    expect(document.querySelector('[aria-label="unfavorite this restaurant"]'))
+    expect(document.querySelector('[aria-label="unlike this Restaurant"]'))
       .toBeFalsy();
   });
 
