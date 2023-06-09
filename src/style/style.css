@@ -112,11 +112,11 @@ nav {
 
 .detail-btn{
     display: inline-block;
-    min-height: 44px;
+    min-height: 50px;
     min-width: 44px;
     width: 100%;
     font-size: 0.8rem;
-    padding: 0.5em 2em;
+    padding: 1em 2em;
     border: transparent;
     background: #ff6900;
     color: white;
@@ -280,7 +280,7 @@ p.about-item{
     text-align: center;
 }
 /* Footer */
-@media screen and (min-width: 300px) and (max-width: 480px){
+@media screen and (min-width: 300px) and (max-width: 600px){
     nav {
         display: flex;
         flex-direction: column;
@@ -473,4 +473,8 @@ p.about-item{
    
 .skip-link:focus {
      top: 0;
+}
+
+#webpack-dev-server-client-overlay-div, #webpack-dev-server-client-overlay{
+    display: none;
 }
